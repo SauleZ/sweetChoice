@@ -1,0 +1,95 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .6);
+  overflow: auto;
+}
+
+/*.hide {*/
+/*  display: none;*/
+/*}*/
+
+.modal-content {
+  background-color: white;
+  width: 50%;
+  border-radius: 6px;
+  transform: translateY(50px);
+  animation: .4s slide;
+}
+
+@keyframes slide {
+  from {opacity: 0; transform: translateY(0);}
+  to {opacity: 1; transform: translateY(50px);}
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {width: 75%;}
+}
+
+.modal-header, .modal-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+}
+
+/* *** Style Rules For Form *** */
+.my-form {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.form-img {
+  max-width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.form-control {
+  display: block;
+  width: 95%;
+  padding: .375rem .75rem;
+  color: #495057;
+  background-color: #f1f1f1;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  outline: 0;
+  transition: .15s ease-in-out;
+  margin-left: 70%;
+}
+
+/* Primary Button */
+.btn-primary {color: #007bff; border-color: #007bff;}
+.btn-primary:hover {color: white; background-color: #007bff;}
+.btn-primary:focus {box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);}

@@ -1,0 +1,29 @@
+<div class="modal hide" id="myModal" tabindex="-1">
+  <div class="modal-content">
+    <div class="modal-body">
+<form [formGroup]="form">
+  <img class="form-img" src="../../../assets/cakes/avatar.jpg">
+
+  <div class="form-group">
+  <label for="username">Username:</label>
+  <input class="form-control" matInput id="username" name="userName" formControlName="userName"><br>
+  </div>
+
+  <div class="form-group">
+  <label for="password">Password</label>
+    <input class="form-control" id="password" matInput formControlName="password" name="password">
+  </div>
+
+  <div class="form-group">
+  <label for="roleUser">Roles: </label>
+  <select id="roleUser" name="roleID" formControlName="roleID">
+    <option *ngFor="let i of roles" [value]="i.id">{{i.nameRole}}</option>
+  </select>
+  </div>
+
+  <button *ngIf="new" (click)="create()" class="btn btn-primary">Create</button>
+  <button *ngIf="!new" (click)="update()" class="btn btn-primary">Update</button>
+</form>
+    </div>
+  </div>
+</div>

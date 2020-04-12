@@ -1,0 +1,50 @@
+<div class="filter">
+  <input style="margin-left: 10%" matInput placeholder="Filter" (keyup)="applyFilter($event.target.value)">
+  <button type="button" class="btn btn-primary" (click)="create()">Add member</button>
+</div>
+
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> ID</th>
+    <th mat-cell *matCellDef="let element"> {{element.id}} </th>
+  </ng-container>
+
+
+  <ng-container matColumnDef="userName">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> UserName</th>
+    <th mat-cell *matCellDef="let element"> {{element.userName}} </th>
+  </ng-container>
+
+  <ng-container matColumnDef="password">
+    <th mat-header-cell *matHeaderCellDef> Password</th>
+    <th mat-cell *matCellDef="let element"> {{element.password}} </th>
+  </ng-container>
+
+
+  <ng-container matColumnDef="roleID">
+    <th mat-header-cell *matHeaderCellDef> role</th>
+    <th mat-cell *matCellDef="let element"> {{findRole(element.roleID)}} </th>
+  </ng-container>
+
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef> action</th>
+    <th mat-cell *matCellDef="let element">
+      <mat-icon (click)="update(element)">create</mat-icon>
+      <mat-icon style="color: darkred" (click)="delete(element.id)">delete</mat-icon>
+<!--      <button (click)="delete(element.id)">delete</button>-->
+<!--      <button (click)="update(element)">update</button>-->
+    </th>
+  </ng-container>
+  <!-- Header and Row Declarations -->
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<mat-paginator [pageSizeOptions]="[1,5, 10, 15]" [length]="paginator.length"
+               [pageSize]="paginator.size"
+               [pageIndex]="paginator.page"
+               (change)="changeTableList($event)"
+               (page)="changeTableList($event)"
+
+               showFirstLastButtons></mat-paginator>

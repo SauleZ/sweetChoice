@@ -1,0 +1,51 @@
+<div class="modal hide" id="myModal" tabindex="-1">
+  <div class="modal-content">
+    <div class="modal-body">
+      <form [formGroup]="form">
+
+        <div class="form-group">
+          <label for="name">Cake name:</label>
+          <input class="form-control" matInput id="name" name="name" formControlName="name"><br>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <input class="form-control" id="description" matInput formControlName="description" name="description">
+        </div>
+
+        <div class="form-group">
+          <label for="price">Cake price:</label>
+          <input class="form-control" id="price" matInput name="price" formControlName="price">
+        </div>
+
+        <div class="form-group">
+        <label for="path">Path to photo:</label>
+        <input matInput class="form-control" id="path" name="path" formControlName="path">
+        </div>
+
+        <button *ngIf="new" (click)="create()" class="btn btn-primary">Create</button>
+        <button *ngIf="!new" (click)="update()" class="btn btn-primary">Update</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--<form [formGroup]="form">-->
+<!--  <label for="name">Cake name:</label>-->
+<!--  <input id="name" name="name" formControlName="name"><br>-->
+
+<!--  <label for="description">Description:</label>-->
+<!--  <input id="description" name="description" formControlName="description"><br>-->
+
+<!--  <label for="price">Cake price:</label>-->
+<!--  <input id="price" name="price" formControlName="price">-->
+
+<!--  <label for="path">Path to photo:</label>-->
+<!--  <input id="path" name="path" formControlName="path">-->
+
+<!--  <button *ngIf="new" (click)="create()">create</button>-->
+<!--  <button *ngIf="!new" (click)="update()">update</button>-->
+<!--</form>-->

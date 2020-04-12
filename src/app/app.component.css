@@ -1,0 +1,54 @@
+mat-toolbar{
+  background-color: #7908b4;
+  /*text-align: center; #8008bf* #e6126e*/
+}
+#toolBar a{
+  text-decoration: none;
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+}
+#toolBar a:hover{
+  /*background-color: #bc2bcf;*/
+  border-radius: 15%;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 2px;
+}
+#contentTool{
+  width: 100%;
+}
+#logo{
+  background-size: contain;
+  height: 45px;
+  z-index: 5;
+}
+.mat-tab-nav-bar{
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+}
+small{
+  color: #FFFFFF;
+  margin: 7%;
+}
+a svg{
+  margin: 5%;
+}
+#socialMedia{
+  margin-left: 50%;
+}
+#menu{
+  margin: 0 12%;
+  width: 20%
+}
+#signup{
+  font-size: 15px;
+}
+#login{
+  font-size: 15px;
+}
+#logout{
+  font-size: 15px;
+}
+

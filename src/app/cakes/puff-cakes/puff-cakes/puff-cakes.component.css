@@ -1,0 +1,23 @@
+mat-card{
+  box-sizing: border-box;
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+}
+
+mat-icon{
+  margin-left: 70%;
+  color: darkblue;
+  cursor: pointer;
+}
+mat-icon:hover{
+  background-color: lightgray;
+  border-radius: 50%;
+}
+mat-card-header{
+  height: 40px;
+  text-align: center;
+}
+mat-card-content{
+  height: 100px;
+}

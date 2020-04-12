@@ -1,0 +1,33 @@
+table{
+  width: 90%;
+  margin: 2% 5%;
+}
+mat-icon:hover{
+  cursor: pointer;
+  background-color: lightgray;
+}
+mat-icon{
+  margin: 5%;
+  border-radius: 50%;
+}
+.filter{
+  display: inline-block;
+  width: 100%;
+}
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  outline: 0;
+  transition: .15s ease-in-out;
+  margin-left: 80%;
+}
+
+/* Primary Button */
+.btn-primary {color: #007bff; border-color: #007bff;}
+.btn-primary:hover {color: white; background-color: #007bff;}
+.btn-primary:focus {box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);}

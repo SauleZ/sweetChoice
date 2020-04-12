@@ -1,0 +1,19 @@
+<div *ngFor="let cake of spongeCakes">
+  <div class="item">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{cake.name}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{cake.path}}">
+      <mat-card-content>
+        <p>{{cake.description}}</p>
+        <h3>{{cake.price}}</h3>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="createSpongeCakes()" color="accent">CREATE</button>
+        <button mat-button (click)="updateSpongeCakes(cake)"color="primary">UPDATE</button>
+        <button mat-button (click)="deleteSpongeCakes(cake.id)" color="warn">DELETE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

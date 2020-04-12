@@ -1,0 +1,33 @@
+mat-card{
+  box-sizing: border-box;
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+}
+mat-card-content button{
+  margin-left: 70%;
+}
+mat-list{
+  width: 70%;
+  margin: 2% 15%;
+  text-align: center;
+}
+#icon{
+  width: 20%;
+  height: 100%;
+  border-radius: 20%;
+}
+mat-list-item{
+  height: 100px;
+}
+#sum{
+  color: darkred;
+}
+#buy{
+  margin: 0 5%;
+}
+#footer{
+  display: flex;
+  margin-left: 70%;
+  margin-top: 5%;
+}

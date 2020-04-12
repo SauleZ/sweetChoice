@@ -1,0 +1,16 @@
+<div *ngFor="let cake of spongeCakes">
+<div class="item">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{cake.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{cake.path}}">
+    <mat-card-content>
+      <p>{{cake.description}}</p>
+      <h3>{{cake.price | currency:cur }}</h3>
+      <mat-icon (click)="addItem(cake.name, cake.price, cake.path)">add_shopping_cart</mat-icon>
+    </mat-card-content>
+  </mat-card>
+</div>
+</div>
+<button mat-button (click)="changeCurrency()" color="primary" style="border: solid 2px #007bff;margin: 1% 5% 2% 80% ">Change currency</button>

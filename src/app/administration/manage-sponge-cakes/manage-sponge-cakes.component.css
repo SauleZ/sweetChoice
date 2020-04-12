@@ -1,0 +1,13 @@
+mat-card{
+  box-sizing: border-box;
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+}
+mat-card-header{
+  height: 40px;
+  text-align: center;
+}
+mat-card-content{
+  height: 100px;
+}

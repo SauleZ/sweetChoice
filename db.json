@@ -1,0 +1,218 @@
+{
+  "spongeCakes": [
+    {
+      "id": 1,
+      "name": "Woopie pie",
+      "description": "Delicate cake based on chocolate biscuit and cream cheese cream.",
+      "price": 5990,
+      "path": "../../../../assets/cakes/tort_vupi_pay_krug.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sour cream.",
+      "description": "Dlicate sponge cake based on kefir, abundantly soaked in sugar syrup and layered with the most delicate creamy sour.",
+      "price": 4990,
+      "path": "../../../../assets/cakes/tort_smetannik_klassik.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Cake dairy girl.",
+      "description": "Delicate cake based on chocolate biscuit and cream cheese cream. Biscuits baked on the basis of condensed milk.",
+      "price": 5990,
+      "path": "../../../../assets/cakes/molochnaya_devochka.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Classic Woopie Pie.",
+      "description": "Delicate cake based on chocolate biscuit and cheese cream.",
+      "price": 4590,
+      "path": "../../../../assets/cakes/tort_vupi_pay_klassik.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Red velvet.",
+      "description": "Refined, bright cake consisting of dark red chocolate cakes.",
+      "price": 7990,
+      "path": "../../../../assets/cakes/tort_krasniy_barhat.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Carioll Cake.",
+      "description": "Delicate sponge cake and airy meringues with walnuts.",
+      "price": 4990,
+      "path": "../../../../assets/cakes/tort_kariolla.jpg"
+    }
+  ],
+  "weddingCakes": [
+    {
+      "id": 7,
+      "name": "Modern wedding cake",
+      "description": "Understated and elegant. A modern wedding cake with Fondant texture. ",
+      "price": 25990,
+      "path": "../../../../assets/cakes/Modern.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Lavande.",
+      "description": "The prettiest modern cake. A dramatic and elegant cake.",
+      "price": 4990,
+      "path": "../../../../assets/cakes/Lvend.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Golden cake",
+      "description": "Childhood Friends Turned Adult Sweethearts Make For The Perfect Fairytale Wedding Day!",
+      "price": 5990,
+      "path": "../../../../assets/cakes/Gold.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Minnesota Cake.",
+      "description": "Sean and Jenna's Wedding in Nisswa, Minnesota. An ideal choice if you're looking for something a little more exotic.",
+      "price": 4590,
+      "path": "../../../../assets/cakes/Minnesota.jpg"
+    }
+  ],
+  "souffleCakes": [
+    {
+      "id": 13,
+      "name": "Cake pigeon's milk.",
+      "description": "Delicate sponge cake filled with creamy milk souffle. The cake is covered with chocolate icing. ",
+      "price": "4500",
+      "path": "../../../../assets/cakes/tort_ptiche_moloko.jpg"
+    },
+    {
+      "id": 14,
+      "name": "YOGHURT cake.",
+      "price": 5000,
+      "description": "Delicate sponge cake filled with creamy yogurt souffle with the addition of peach slices.",
+      "path": "../../../../assets/cakes/tort-sufle_yogurtoviy.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Cake Paradise",
+      "description": "Delicate chocolate and sour cream sponge cake filled with airy chocolate and milk soufflé, interlaced.",
+      "price": 3590,
+      "path": "../../../../assets/cakes/tort_paradiz.jpg"
+    }
+  ],
+  "puffCakes": [
+    {
+      "id": 16,
+      "name": "Medovik s orehami",
+      "price": 4150,
+      "description": "Thin honey cakes layered with whipped cream.",
+      "path": "../../../../assets/cakes/medovik_s_orehami_klassik.jpg"
+    },
+    {
+      "id": 17,
+      "name": "SAND-HONEY CAKE \"HONEY WITH CREAM\"",
+      "description": "Thin honey cakes layered with whipped cream.",
+      "price": "4950",
+      "path": "../../../../assets/cakes/pesochno-medoviy_tort_medovik_so_slivkami.jpg"
+    },
+    {
+      "id": 18,
+      "name": "NAPOLEON CAKE",
+      "description": "Thin puff pastries layered with whipped cream.",
+      "price": 4590,
+      "path": "../../../../assets/cakes/tort_napoleon.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 10,
+      "userName": "Saule",
+      "password": "123",
+      "roleID": 1
+    },
+    {
+      "id": 11,
+      "userName": "Santa",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 12,
+      "userName": "Zain",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 13,
+      "userName": "Harry",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 15,
+      "userName": "Henry",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 16,
+      "userName": "Daniel",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 17,
+      "userName": "Sarah",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 18,
+      "userName": "Selena",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 19,
+      "userName": "Bradly",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 20,
+      "userName": "Taylor",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 22,
+      "userName": "Jeniffer",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 23,
+      "userName": "Emmanuel",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 25,
+      "userName": "Test",
+      "password": "123",
+      "roleID": 2
+    },
+    {
+      "id": 27,
+      "userName": "Test2",
+      "password": "123",
+      "roleID": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "nameRole": "super admin"
+    },
+    {
+      "id": 2,
+      "nameRole": "client"
+    }
+  ]
+}
