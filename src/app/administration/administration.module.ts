@@ -9,7 +9,7 @@ import { ManageSpongeCakesComponent } from './manage-sponge-cakes/manage-sponge-
 import { ManageWeddingCakesComponent } from './manage-wedding-cakes/manage-wedding-cakes.component';
 import { ManageSouffleCakesComponent } from './manage-souffle-cakes/manage-souffle-cakes.component';
 import { ManagePuffCakesComponent } from './manage-puff-cakes/manage-puff-cakes.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -35,7 +35,8 @@ import {MatIconModule} from "@angular/material/icon";
         MatSortModule,
         MatInputModule,
         MatPaginatorModule,
-        MatIconModule
+        MatIconModule,
+        FormsModule
     ]
 })
 export class AdministrationModule { }

@@ -8,11 +8,16 @@ import {MatCardModule} from "@angular/material/card";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatInputModule} from "@angular/material/input";
+import {ManageCakesComponent} from "../administration/manage-cakes/manage-cakes.component";
 
 const authRoutes: Routes = [
   {
     path: '',
     component: LoginComponent,
+  },
+  {
+    path: '../admin',
+    component: ManageCakesComponent
   }
 ];
 

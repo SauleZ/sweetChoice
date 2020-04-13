@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {AuthService} from "./auth/auth.service";
-import {ManageUsersDialogComponent} from "./administration/manage-users-dialog/manage-users-dialog.component";
 import {MatDialog} from "@angular/material/dialog";
 import {SignUpComponent} from "./sign-up/sign-up.component";
 import {UserService} from "./Services/user.service";
@@ -11,7 +10,10 @@ import {UserService} from "./Services/user.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  dataSource: any;
+  // dataSource: any;
+  // displayLogin = 'block';
+  // displaySignUp = 'block';
+  // displayLogout = 'none';
   constructor(private  _service: AuthService,
               private _dialog: MatDialog,
               private _service2: UserService) {
@@ -20,6 +22,7 @@ export class AppComponent {
   title = 'sweetChoice';
 
   logout() {
+    alert("abcd");
     this._service.logout();
   }
 
@@ -32,6 +35,21 @@ export class AppComponent {
       });
     });
   }
+
+  setDisplayLogin() {
+    if (this._service.isAuthenticated()) {
+      return 'none';
+    }
+    return '';
+  }
+
+  setDisplayLogout() {
+    if (this._service.isAuthenticated()) {
+      return '';
+    }
+    return 'none';
+  }
+
   // getUsers() {
   //   this._service2.getAllUers().subscribe(res => {
   //     this.dataSource = res;

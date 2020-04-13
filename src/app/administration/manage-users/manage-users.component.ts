@@ -20,7 +20,12 @@ export class ManageUsersComponent implements OnInit {
   paginator = {
     length: 0,
     size: 1,
-    page: 0
+    page: 0,
+    sort: {
+      id: -1,
+      username: -1
+    },
+    search: ''
   };
   @ViewChild(MatSort) sort: MatSort;
 
@@ -62,7 +67,36 @@ export class ManageUsersComponent implements OnInit {
   }
 
   getUsers() {
-    const query = '?_page=' + this.paginator.page + '&_limit=' + this.paginator.size;
+    let query = '?_page=' + this.paginator.page + '&_limit=' + this.paginator.size;
+    if (this.paginator.sort.id !== -1 && this.paginator.sort.username !== -1) {
+      query += "&_sort=id,username"
+    } else if (this.paginator.sort.id !== -1) {
+      query += "&_sort=id"
+    } else if (this.paginator.sort.username !== -1) {
+      query += "&_sort=username"
+    }
+    if (this.paginator.sort.id == 0) {
+      query += "&_order=asc"
+    } else if (this.paginator.sort.id == 1) {
+      query += "&_order=desc"
+    }
+    if (this.paginator.sort.username == 0) {
+      if (query.indexOf("order") !== -1) {
+        query += ",asc"
+      } else {
+        query += "&_order=asc"
+        query += ",asc"
+      }
+    } else if (this.paginator.sort.username == 1) {
+      if (query.indexOf("order") !== -1) {
+        query += ",desc"
+      } else {
+        query += "&_order=desc"
+      }
+    }
+    if (this.paginator.search !== '') {
+      query += '&q=' + this.paginator.search
+    }
     this._service.getAllUersPage(query).subscribe(res => {
       this.dataSource = res;
       this._service.getAllUers().subscribe(res2 => {
@@ -104,5 +138,16 @@ export class ManageUsersComponent implements OnInit {
     this.paginator.page = event.pageIndex;
     this.paginator.size = event.pageSize;
     this.getUsers();
+  }
+
+  sorting(event) {
+    if (this.paginator.sort[event] === -1) {
+      this.paginator.sort[event] = 0
+    } else if (this.paginator.sort[event] === 0) {
+      this.paginator.sort[event] = 1
+    } else {
+      this.paginator.sort[event] = -1;
+    }
+    this.getUsers()
   }
 }

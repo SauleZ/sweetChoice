@@ -14,12 +14,15 @@
         <mat-icon>comment</mat-icon>Admin</a>
       </span>
       <span id="settings">
-      <a id="login" class="mat-tab-nav-bar" routerLink="./login" routerLinkActive="active" href="#">
+      <a id="login" class="mat-tab-nav-bar" routerLink="./login"
+         routerLinkActive="active" href="#" style="display: {{setDisplayLogin()}};">
         <mat-icon>person</mat-icon>Log in</a>
-      <a id="logout" class="mat-tab-nav-bar" (click)="logout()" routerLink="./cakes" routerLinkActive="active" href="#">
+      <a id="logout" class="mat-tab-nav-bar" (click)="logout()"
+         routerLink="./cakes" routerLinkActive="active" href="#" style="display: {{setDisplayLogout()}};">
         <mat-icon>system_update_alt
         </mat-icon>Log out</a>
-      <a id="signup" class="mat-tab-nav-bar" (click)="create()" routerLinkActive="active" routerLink="./cakes">
+      <a id="signup" class="mat-tab-nav-bar" (click)="create()"
+         routerLinkActive="active" routerLink="./cakes" style="display: {{setDisplayLogin()}};">
         <mat-icon>open_in_browser</mat-icon>Sign up</a>
       </span>
     </div>

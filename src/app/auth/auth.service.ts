@@ -24,17 +24,17 @@ export class AuthService {
   }
 
   login(username, password) {
-    for(let i = 0; i<this.users.length; i++) {
-      if(this.users[i].userName === username && this.users[i].password === password) {
-        if(this.users[i].roleID == 1){
+    for (let i = 0; i < this.users.length; i++) {
+      if (this.users[i].userName === username && this.users[i].password === password) {
+        if (this.users[i].roleID == 1) {
           this.isLoggedIn = true;
           localStorage.setItem('userName', this.users[i].userName);
-        }
-        else {
-          alert("Not admin");
+        } else {
+          alert("1)You are not admin. \n 2)Login or password is wrong");
         }
       }
     }
+    return true;
   }
 
   // adminLogin(username, password) {

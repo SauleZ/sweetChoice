@@ -1,18 +1,18 @@
 <div class="filter">
-  <input style="margin-left: 10%" matInput placeholder="Filter" (keyup)="applyFilter($event.target.value)">
+  <input style="margin-left: 10%" matInput placeholder="Filter" [(ngModel)]="paginator.search" (keyup)="getUsers()">
   <button type="button" class="btn btn-primary" (click)="create()">Add member</button>
 </div>
 
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
   <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> ID</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header (click)="sorting('id')"> ID</th>
     <th mat-cell *matCellDef="let element"> {{element.id}} </th>
   </ng-container>
 
 
   <ng-container matColumnDef="userName">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> UserName</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header (click)="sorting('username')">  UserName</th>
     <th mat-cell *matCellDef="let element"> {{element.userName}} </th>
   </ng-container>
 
