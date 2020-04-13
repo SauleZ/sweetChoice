@@ -22,7 +22,6 @@ export class AppComponent {
   title = 'sweetChoice';
 
   logout() {
-    alert("abcd");
     this._service.logout();
   }
 
@@ -37,14 +36,14 @@ export class AppComponent {
   }
 
   setDisplayLogin() {
-    if (this._service.isAuthenticated()) {
+    if (localStorage.getItem('userName')) {
       return 'none';
     }
     return '';
   }
 
   setDisplayLogout() {
-    if (this._service.isAuthenticated()) {
+    if (localStorage.getItem('userName')) {
       return '';
     }
     return 'none';
