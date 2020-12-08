@@ -1,5 +1,5 @@
 mat-toolbar{
-  background-color: #7908b4;
+  background-color: #ff7103;
   /*text-align: center; #8008bf* #e6126e*/
 }
 #toolBar a{
@@ -19,7 +19,7 @@ mat-toolbar{
 }
 #logo{
   background-size: contain;
-  height: 45px;
+  /*height: 45px;*/
   z-index: 5;
 }
 .mat-tab-nav-bar{
